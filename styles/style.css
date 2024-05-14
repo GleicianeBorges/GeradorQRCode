@@ -23,7 +23,7 @@ body {
 
 }
 
-.contrainer {
+.container {
     width: 30rem;
     background-color: var(--secondary-color);
     display:  flex;
@@ -53,4 +53,18 @@ body {
     font-family: 'Roboto', sans-serif;
     padding: 4px 24px;
     border: 1px solid whitesmoke;
+}
+
+.badgesContainer {
+    display: flex;
+    gap: 1rem;
+}
+
+.badge {
+    background-color: var(--primary-color);
+    padding: 4px 8px;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    border: 1px solid white;
 }

@@ -9,14 +9,19 @@
 </head>
 
 <body>
-    <div class="contrainer">
+    <div class="container">
         <h1>Qrcode Generator</h1>
-        <input class="textfield" type="text" id="input" placeholder="Enter your text here">
-        <button onclick="generateQRCode()" class="generateButton">Gerar</button>
-        <div id="qrcode"></div>
-    </div>
-    <script src="scripts/qrcode.js"></script>
-    <script src="scripts/index.js"></script>
+        <div class="badgesContainer">
+            <button class="badge" onclick="insertInputPattern()">Email</button>
+            <button class="badge" onclick="insertInputPattern()">Phone</button>
+            <button class="badge" onclick="insertInputPattern()">sms</button> 
+        </div>
+            <input class="textfield" type="text" id="input" placeholder="Enter your text here">
+            <button onclick="generateQRCode()" class="generateButton">Gerar</button>
+            <div id="qrcode"></div>
+       </div>
+        <script src="scripts/qrcode.js"></script>
+        <script src="scripts/index.js"></script>
 </body>
 
 </html>

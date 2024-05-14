@@ -10,7 +10,7 @@ function generateQRCode(){
     qrCodeHtml.innerHTML = "";
 
 
-    let generateQRCode = new QRCode( qrCodeHtml,{
+    let qrCode = new QRCode( qrCodeHtml,{
         text: text,
         width: 128,
         height: 128,
@@ -19,5 +19,5 @@ function generateQRCode(){
         correctLevel: QRCode.CorrectLevel.H
     });
 
-    text.value = "";
+    qrCode.makeCode(text.value);
 }
